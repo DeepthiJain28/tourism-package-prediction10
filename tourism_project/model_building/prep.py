@@ -15,6 +15,7 @@ api = HfApi(token=os.getenv("HF_TOKEN"))
 DATASET_PATH = "hf://datasets/DeepthiJ28/tourism-package-prediction/tourism.csv"
 df = pd.read_csv(DATASET_PATH)
 print("Dataset loaded successfully.")
+print(df['ProdTaken'])
 
 # Drop the unique identifier
 df.drop(columns=['ProdTaken'], inplace=True)
