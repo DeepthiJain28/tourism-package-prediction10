@@ -5,7 +5,6 @@ import os
 
 # Initialize API client
 api = HfApi(token=os.getenv("HF_TOKEN"))
-
 repo_id = "DeepthiJ28/tourism-package-prediction"
 repo_type = "dataset"
 
